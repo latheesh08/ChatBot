@@ -1,0 +1,153 @@
+
+#form  .formwrapper > input[type = text] , #verify > input[type = text] , #contact > input[type = text]{
+  width: 90% !important;
+color: #874181 !important;
+padding: 5px 10px;
+margin: 8px 0;
+box-sizing: border-box;
+border: none;
+border-bottom: 2px solid #f7ae1c !important;
+background: transparent;
+font-size: 16px;
+}
+#form  .formwrapper > input[type = Email]{
+  width: 90% !important;
+color: #874181 !important;
+padding: 5px 10px;
+margin: 8px 0;
+box-sizing: border-box;
+border: none;
+border-bottom: 2px solid #f7ae1c !important;
+background: transparent;
+font-size: 16px;
+}
+/* .file-upload {
+	position: relative;
+	display: inline-block;
+}
+
+.file-upload__label {
+  display: block;
+  padding: 1em 2em;
+  color: #fff;
+  background: #222;
+  border-radius: .4em;
+  transition: background .3s;
+}
+  .file-upload__label:hover {
+     cursor: pointer;
+     background: #000;
+  } */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s;
+      -webkit-text-fill-color:#FFFFFF;
+  }
+.formwrapper{
+  margin: 10px;
+  text-align: center;
+}
+#form .formwrapper > button{
+  float: left;
+  margin-bottom: 10px;
+  color: white;
+  font-family: Open Sans;
+  /* font-weight: 400; */
+  border: 1px solid #d85460;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background: #d85460;
+}
+input[type="file"] {
+  display: none;
+}
+ .custom-file-upload,.upload_button , #verify > button{
+  margin-left: 10px;
+  color: white;
+  font-family: Open Sans;
+  /* font-weight: 400; */
+  border: 1px solid #d85460;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background: #d85460;
+} 
+.upload_button{
+  margin-left: 20px;
+
+} 
+.react-pdf__Page__canvas{
+  width: 150px !important;
+  height: 200px !important;
+
+}
+.anticon {
+ margin-right: 10px;
+}
+.final_response{
+  background-color: #f4f7f9;
+  color: #DE7207;
+  padding: 15px;
+  border-radius: 10px;
+}
+/* input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+} */
+#form{
+  width: 95%;
+  margin-top: 20px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  border-top-width: 8px;
+  border-top-style: ridge;
+  border-right-width: 3px;
+  border-bottom-width: 8px;
+  border-left-width: 3px;
+  border-style: solid;
+  border-color: #082F70;
+}
+.title{
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  color: #d85460;
+  font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+  #form  .formwrapper > input[type = text] {
+
+  padding: 5px 5px;
+    margin-bottom: 5px !important;
+    margin: 0;
+    font-size: inherit;
+}
+#form  .formwrapper > input[type = Email]{
+  padding: 5px 5px !important;
+  margin-bottom: 5px !important;
+  font-size: inherit;
+}
+#form {
+  margin-left: 3%;
+}
+#form > button{
+  margin-left: 15px
+}
+.status{
+  margin: auto;
+}
+#verify{
+  margin: auto;
+  width:80%; 
+}
+}

@@ -1,0 +1,167 @@
+.ant-tabs {
+width: 100%;
+color: white;
+}
+.form{
+    width: 95%;
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    border-top-width: 8px;
+    border-top-style: ridge;
+    border-right-width: 3px;
+    border-bottom-width: 8px;
+    border-left-width: 3px;
+    border-style: solid;
+    border-color: #082F70;
+}
+.agencywrapper{
+    margin: 10px;
+    text-align: center;
+  }
+.agencywrapper >input[type = text],.loginform > input[type = text]{
+    width: 90% !important;
+    color: black !important;
+    padding: 5px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #f7ae1c !important;
+    background: transparent;
+    /* font-size: 16px; */
+    }
+    .form .agencywrapper > input[type = Email]{
+        width: 90% !important;
+        padding: 5px 10px;
+    }
+    .loginform > input[type = Email] {
+        width: 90% !important;
+        padding: 5px 10px;
+    }
+.form .agencywrapper > button, .loginform > button , .contactform > button{
+    margin-left: 10px;
+    color: white;
+    font-family: Open Sans;
+    /* font-weight: 400; */
+    border: 1px solid #d85460;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background: #d85460;
+} 
+
+.agencywrapper > button{
+    float: left;
+    margin-bottom: 10px;
+}
+textarea{
+    width: 100%;
+    height:100px;
+}
+.contact{
+display: grid;
+grid-column-gap: 10px;
+grid-template-columns: auto auto auto;
+padding: 10px;
+
+}
+.contactform > input[type = text],input[type = Email]{
+    width: 100%;
+    color: black !important;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #f7ae1c !important;
+    background: transparent;
+    /* font-size: 16px; */
+}
+.contactform > input[type = Email]{
+    width: 100% ;
+    
+}
+.final_response{
+    background-color: #f4f7f9;
+    color: #DE7207;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .Address {
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    border-top-width: 8px;
+    border-top-style: ridge;
+    border-right-width: 3px;
+    border-bottom-width: 8px;
+    border-left-width: 3px;
+    border-style: solid;
+    border-color: #082F70;
+    margin-right: -15px;
+}
+.Address > b {
+    color: #f6ae25;
+}
+.contact_social a > i{
+    font-size: 35px;
+    margin: 25px;
+    cursor: pointer;
+
+}
+a{
+    text-decoration: none;
+    
+}
+@media only screen and (max-width: 600px) {
+    .form {
+    margin-left: 3%;
+    }
+    .agencywrapper >input[type = text],.loginform > input[type = text]{
+    padding: 5px 5px;
+    margin-bottom: 5px !important;
+    margin: 0;
+    }
+  .agencywrapper > input[type = Email]{
+    padding: 5px 5px !important;
+    margin-bottom: 5px !important; 
+  }
+    .contact_social{
+        font-size: 20px;
+        margin:10px;
+         cursor:pointer;
+    }
+    .contactform{
+        text-align: center;
+    }   
+ .loginform > input[type = text], input[type = Email] {
+
+    width: 90%;
+    padding: 0px;
+    /* margin: auto; */
+    margin: 8px 15px;
+}
+textarea {
+    width: 90%;
+    height: 100px;
+    margin: 10px 15px;
+}
+.Address {
+    margin: 10px 15px;
+}
+.contactform > button, .loginform > button {
+    margin-left: 15px;
+  
+}
+    .contact_social a > i{
+        font-size: 35px;
+        margin: 0px 23px;
+         cursor:pointer;
+    }
+    .contact{
+        display: inline;
+    }
+
+}

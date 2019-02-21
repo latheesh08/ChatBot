@@ -1,0 +1,31 @@
+/* .contact > input [type = text] ,input[type = Email] {
+    background-color: brown;
+} */
+/* .contact > input[type = Email]{
+    background-color: blue;
+} */
+@media only screen and (max-width: 600px) {
+    .contact_social{
+        font-size: 20px;
+        margin:10px;
+         cursor:pointer;
+    }
+.contactform >input[type = text], input[type = Email], .loginform > input[type = text], input[type = Email] {
+
+    width: 90%;
+    padding: 0px;
+    /* margin: auto; */
+    margin: 8px 15px;
+}
+textarea {
+    width: 90%;
+    height: 100px;
+    margin: 10px 15px;
+}
+.Address {
+    margin: 10px 15px;
+}
+.contactform > button, .loginform > button {
+    margin-left: 15px
+}
+}

@@ -1,146 +1,323 @@
-.App {
-  text-align: center;
+.rcw-launcher{
+/* display: none; */
+width: 50px;
+height: 50px;
+}
+.rcw-conversation-container .rcw-header{
+    padding: 0px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.rcw-title{
+    padding: 5px 0px !important;
+    font-weight: 700;
+    font-size: 30px !important;
+}
+.rcw-title > img{
+
+    width: auto !important;
+}
+.rcw-messages-container{
+    overflow-y: auto;
+    height:63vh;
+    padding-bottom:10px;
+    background-image: url('./images/botback.jpg');
+    /* background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+.rcw-client, .rcw-response{
+    max-width:265px;
+    padding:8px 15px;
+}
+.rcw-send .rcw-send-icon{
+    content: url('./images/send2.png');
+  
+}
+.rcw-send{
+    background: transparent;  
+}
+.rcw-new-message{
+    font-size: 14px;
+    background: transparent;
+}
+.rcw-sender {
+background-color: #ffffff;
 }
 
-.App-header {
-  background-color: white !important;
-  height: 150px !important;
-  padding: 20px !important;
-  color: white !important;
-  position :relative !important;
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
 }
 
-.App .header {
-    height: 50px !important;
-    visibility: visible !important;
-    padding: 0px 0 5px !important;
-    border-radius: 0px !important;
-    /*animation: App-header-move 1s infinite;
-    -webkit-animation: App-header-move 1s infinite;*/
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #35cce6;
+    border-radius: 10px;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
+/* button styles */
 
-.App-intro {
-  font-size: large;
+.Suggestion{
+    margin : auto;
+    }
+    .Suggestion > button {
+        text-decoration:none;
+        font-family:Arial;
+        background:#b01a2c;
+        background:-o-linear-gradient(90deg, #b01a2c, #fc5c17);
+        background:-moz-linear-gradient( center top, #b01a2c 5%, #fc5c17 100% );
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b01a2c), color-stop(1, #fc5c17) );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b01a2c', endColorstr='#fc5c17');
+        background:-webkit-linear-gradient(#b01a2c, #fc5c17);
+        background:-ms-linear-gradient(#b01a2c, #fc5c17);
+        background:linear-gradient(#b01a2c, #fc5c17);
+        text-indent:0px;
+        /* line-height:46px; */
+        -moz-border-radius:42px;
+        -webkit-border-radius:42px;
+        border-radius:42px;
+        text-align:center;
+        vertical-align:middle;
+        display:inline-block;
+        font-size:14px;
+        color:#f7f7f7;
+        min-width: 70px;
+        width: auto;
+        height: 42px;
+        padding: 12px;
+        text-shadow: #383535 2px 2px 0px;
+        border-color: #fc5c17;
+        border-width: 2px;
+        border-style: solid;
+        margin: 4px;
+        box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+    }
+    .Suggestion > button:hover{
+        background:#fc5c17;
+        background:-o-linear-gradient(90deg, #fc5c17, #b01a2c);
+        background:-moz-linear-gradient( center top, #fc5c17 5%, #b01a2c 100% );
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fc5c17), color-stop(1, #b01a2c) );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc5c17', endColorstr='#b01a2c');
+        background:-webkit-linear-gradient(#fc5c17, #b01a2c);
+        background:-ms-linear-gradient(#fc5c17, #b01a2c);
+        background:linear-gradient(#fc5c17, #b01a2c);
+        cursor: pointer;
+    /* background-color: #1088e9; */
+    }
+    .Suggestion > button:active{
+        position:relative;
+        top:3px
+    }
+#custom{
+    margin: auto;
+    color: red;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.status > input[type = text]{
+    width: 100%;
+    
+    color: whitesmoke;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    background: transparent;
+    /* font-size: 16px; */
+    
+    
+    }
+.status > button{
+    color: white;
+    font-family: Open Sans;
+    font-weight: 100;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background: #fc5c17;
+    background-image: -webkit-linear-gradient(top, #fc5c17, #b01a2c);
+    background-image: -moz-linear-gradient(top, #fc5c17, #b01a2c);
+    background-image: -ms-linear-gradient(top, #fc5c17, #b01a2c);
+    background-image: -o-linear-gradient(top, #fc5c17, #b01a2c);
+    background-image: linear-gradient(to bottom, #fc5c17, #b01a2c);
+} 
+.slick-slider, .slick-list {
+        width: 325px !important;
+        height: 222px;
+        left: 7px;
+    }
+    .text-block {
+        position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 45px;
+    margin-left: 7px;
+    font-size: 10px;
 }
-
-/* Standard syntax */
-@keyframes App-header-move {
-  50%  {height: 150px;}
+.image {
+    width: 155px;
+    height: 220px;
 }
-
-.App .boxShadow {
-    border-width: 2px !important;
-    border-radius: 2px !important;
-    border-bottom-width: 0 !important;
-    box-shadow: #2864e7 !important;
-    -moz-box-shadow: 0px 0px 4px 2px rgba(59,220,237,.5) !important;
-    -webkit-box-shadow: 0px 0px 4px 2px rgba(59,220,237,.5) !important;
-    border-radius: 10px !important;
+.slick-next {
+    right: -20px !important;
+}
+.slick-prev {
+    left: -15px !important;
+}
+.jobtitle {
+    top: 8px;
+    margin-left: 10px;
+    text-align: center;
+    width: 120px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 12px;
+    color: #d85460;
+}
+.job_buttons {
+    position: absolute;
+    width: inherit;
+    height: initial;
+    bottom: 0;
+    left: 5px;
+}
+.apply {
+    position: absolute;
+    padding: 2px 15px !important;
+    border-radius: 15px;
+    background: #d85460;
+    border: 1px #d85460 solid;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
     padding: 4px 10px !important;
-    margin: auto !important;
-    background: #002730 !important;
-    margin-bottom: 10px !important;
-    cursor: pointer !important;
 }
-
-.App .mainButtonDiv {
-    margin: auto !important;
-    color: white !important;
+.moredetails {
+    position: absolute;
+    right: 10px;
+    padding: 2px 15px !important;
+    border-radius: 15px;
+    background: none;
+    border: 1px white solid !important;
+    background: white;
+    border: none;
+    cursor: pointer;
+    color: #d85460;
+    font-weight: bold;
+    padding: 4px 10px !important;
 }
-
-.App a:-webkit-any-link {
-    color: greenyellow !important;
-    font-weight: bold !important;
-    font-size: 15px;
+input:-webkit-autofill {
+    -webkit-text-fill-color: #874181 !important;
 }
-.App a:hover {
-    color: blueviolet !important;
+.rcw-response {
     background-color: transparent !important;
-    text-decoration: underline !important;
+    max-width: none !important;
+    position: relative;
+    margin-left: 12%;
+    z-index: 20;
 }
-.App .conversation-container {
-    border: 1px black !important;
-    border-radius: 0px !important;
-    margin-right: 19% !important;
-    margin-bottom: -15% !important;
+.rcw-response .rcw-message-text {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 7px 15px;
+    font-weight: 500;
+    line-height: 20px;
+    min-width: 120px;
 }
-.App .welcome {
-    background: #002730;
-    border: 2px solid rgba(59,220,237,.5) !important;
-    color: white !important;
-    padding: 5px !important;
-    text-align: left !important;
-    word-break: break-all !important;
-}
-.App .messages-container {
-    background-image: url("./images/AI-BG-new.png");
+.rcw-response .rcw-message-text ::before {
+    width: 100px;
+    border-radius: 25px;
 }
 
-.App .client {
-    background-color: #002730 !important;
-    border: 2px solid rgba(59,220,237,.5) !important;
-    color: white !important;
-    padding: 5px !important;
-    border-radius: 0 !important;
+.rcw-response .rcw-message-text ::before {
+    /* position: absolute; */
+    content: url("./images/bot1.png");
+    z-index: -99;
+    /* left: 23%; */
+    margin-top: -23px;
+    margin-left: -68px;
+    float: left;
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    background: #d85460;
+    padding: 5px 0px 0 6px;
+}
+.rcw-response ::before {
+    position: absolute;
+    content: url("./images/left-arrow-line-1.png");
+    margin-top: 0px;
+    /* left: 301px; */
+    margin-left: -34px;
+}
+.rcw-client {
+    margin-right: 50px;
+    background-color: transparent !important;
+    max-width: none !important;
+    position: relative;
+    margin-right: 60px;
+    margin-left: auto;
+    z-index: 20;
 }
 
-.App .ratingsubdiv {
-    display: inline-table;
+.rcw-client, .rcw-response {
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 215px;
+    text-align: left;
 }
-.message > .response {
-    border: 2px solid rgba(59,220,237,.5) !important;
-    color: white !important;
-    border-radius: 0px !important;
-    word-wrap: break-word !important;
-    background: #002730;
+.rcw-client .rcw-message-text {
+    font-weight: 500;
+    line-height: 20px;
+    background-color: #f4d198;
+
+    padding: 7px 15px;
+    border-radius: 20px;
+    min-width: 120px;
+}
+.rcw-client .rcw-message-text ::after {
+    width: 100px;
+    border-radius: 25px;
 }
 
-.conversation-container > .header {
-    background-color: white !important;
-    color: black !important;
-}
-.widget-container {
-    max-width: 400px !important;
-}
-.rating {
-    background-color: #002730;
-    padding: 15px !important;
-    color: white !important;
-    border: 2px solid rgba(59,220,237,.5) !important;
-}
+.rcw-client .rcw-message-text ::after {
+    z-index: -99;
+    float: right;
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    background: #f7ae1c !important;
+    text-align: right;
+    padding: 5px 6px 0 0;
+    position: absolute;
+    content: url("./images/right-img.png");
+    z-index: -99;
+    right: -38px;
+    top: -1px;
 
-.snippet {
-    background-color: #002730;
-    color: white !important;
-    border-radius: 0px !important;
-    border: 2px solid rgba(59,220,237,.5) !important;
-    font-size: 15px !important;
 }
+.rcw-client ::before {
+    position: absolute;
+    content: url("./images/right-arrow-line-1.png");
+    /* bottom: -4px; */
+    right: -3px;
 
-.snippet-details {
-    word-wrap: break-word !important;
-    border-left: none !important;
-    padding-left: 0px !important;
-    font-weight: bold !important;
 }
-
-.App .launcher {
-    z-index: -1 !important;
+.rcw-conversation-container .avatar{
+    border-radius: 0%;
 }
-
-.App .sender {
-    border-radius: 0px !important;
+.rcw-widget-container {
+z-index: 1111;
+}
+.rcw-send .rcw-send-icon {
+    height: 25px;
+    width: auto;
 }
